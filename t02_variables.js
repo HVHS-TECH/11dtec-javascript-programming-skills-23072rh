@@ -4,7 +4,8 @@
  Date written: 29/4/2025
  Purpose: Practicing with Java Script
  **********************************************************************/
-
+ console.log("Running t01_introduction.js");
+ console.log("Adarsh is the goat");
 //Variables
 var Year = 2025;
 console.log (Year);
