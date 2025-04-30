@@ -8,9 +8,6 @@ console.log("Running t01_introduction.js");
 console.log("Adarsh is the goat");
 //Variables
 
-console.log("Ballsleft");
-let Ballsleft = 2;
-console.log("There is", Ballsleft, "In the over);
 
 /***********************************************************************
  Main code
