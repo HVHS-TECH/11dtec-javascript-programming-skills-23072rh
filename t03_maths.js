@@ -24,8 +24,8 @@ console.log (Pocketmoney);
 
 console.log("Hi Reuben");
 console.log("As of", Year, "You are", Age);
-console.log("In 10 years you will be", answer, "years old")
 answer = Age + Num1;
+console.log("In 10 years you will be", answer, "years old")
 console.log("You have", Pocketmoney, "dollars");
 
 /***********************************************************************
