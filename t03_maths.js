@@ -10,6 +10,8 @@
 var Year = 2025;
 console.log (Year);
 
+var Born = 2009;
+
 var Age = 15;
 console.log (Age);
 
@@ -24,6 +26,7 @@ console.log (Pocketmoney);
 
 console.log("Hi Reuben");
 console.log("As of", Year, "You are", Age);
+console.log("You were born in", Born);
 answer = Age + Num1;
 console.log("In 10 years you will be", answer, "years old")
 console.log("You have", Pocketmoney, "dollars");
