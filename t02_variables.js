@@ -13,7 +13,7 @@ console.log (Year);
 var Age = 15;
 console.log (Age);
 
-var Pocketmoney = 3;
+var Pocketmoney = 5;
 console.log (Pocketmoney);
 
 console.log("Hi Reuben");
