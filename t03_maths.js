@@ -19,7 +19,7 @@ var Num2 = 2;
 
 var answer;
 
-var Pocketmoney = 3;
+var Pocketmoney = 5;
 console.log (Pocketmoney);
 
 console.log("Hi Reuben");
@@ -27,7 +27,7 @@ console.log("As of", Year, "You are", Age);
 answer = Age + Num1;
 console.log("In 10 years you will be", answer, "years old")
 console.log("You have", Pocketmoney, "dollars");
-answer = 
+answer = Pocketmoney
 /***********************************************************************
  Main code
 ***********************************************************************/
