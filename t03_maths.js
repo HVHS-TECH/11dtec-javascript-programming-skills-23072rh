@@ -17,14 +17,15 @@ var Num1 = 10;
 
 var Num2 = 2;
 
-var Answer;
+var answer;
 
 var Pocketmoney = 3;
 console.log (Pocketmoney);
 
 console.log("Hi Reuben");
 console.log("As of", Year, "You are", Age);
-console.log("In 10 years you will be", Age + Num1  Answer, "years old")
+console.log("In 10 years you will be", Answer, "years old")
+answer = Age + Num1;
 console.log("You have", Pocketmoney, "dollars");
 
 /***********************************************************************
