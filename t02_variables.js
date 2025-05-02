@@ -1,11 +1,10 @@
 /***********************************************************************
- Name of task: Java script variables
+ Name of task: Learning to make Java script variables
  Name: Reuben Holdsworth
  Date written: 30/4/2025
  Purpose: Practicing with Java Script
  **********************************************************************/
- console.log("Running t01_introduction.js");
- console.log("Adarsh is the goat");
+ console.log("Running t02_varables.js");
 //Variables
 var Year = 2025;
 console.log (Year);
