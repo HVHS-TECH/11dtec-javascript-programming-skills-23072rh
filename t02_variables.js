@@ -7,21 +7,19 @@
  console.log("Running t02_varables.js");
 //Variables
 var Year = 2025;
-console.log (Year);
-
 var Age = 15;
-console.log (Age);
-
 var Pocketmoney = 5;
-console.log (Pocketmoney);
-
-console.log("Hi Reuben");
-console.log("As of", Year, "You are", Age);
-console.log("You have", Pocketmoney, "dollars");
 /***********************************************************************
  Main code
 ***********************************************************************/
-
+//Variable logs
+console.log (Year);
+console.log (Age);
+console.log (Pocketmoney);
+//Code
+console.log("Hi Reuben");
+console.log("As of", Year, "You are", Age);
+console.log("You have", Pocketmoney, "dollars");
 /***********************************************************************
  Functions
 ***********************************************************************/
