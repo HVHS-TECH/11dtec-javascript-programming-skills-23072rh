@@ -29,6 +29,9 @@ console.log("In 10 years you will be", answer, "years old")
 console.log("You have", Pocketmoney, "dollars");
 answer = Pocketmoney / Num2;
 console.log("Half of you money is", answer);
+//Alerts & Prompts
+alert("Welcom to my Alerts & Prompts page");
+prompt(What is you name?)
 /***********************************************************************
  Functions
 ***********************************************************************/
