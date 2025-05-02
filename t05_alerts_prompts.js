@@ -18,7 +18,7 @@ var Num2 = 2;
 var answer;
 var Pocketmoney = 5;
 //Prompts
-var userName = prompt("What is youe name?", "Bob")
+
 /***********************************************************************
  Main code
 ***********************************************************************/
