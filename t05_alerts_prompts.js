@@ -5,14 +5,20 @@
  Purpose: Practicing with Java Script
  **********************************************************************/
  console.log("Running t01_alerts_prompts.js");
-//Variables
+/******** 
+ Varibles
+********/
+//Year 
 var Year = 2025;
 var Born = 2009;
+//Numbers
 var Age = 15;
 var Num1 = 10;
 var Num2 = 2;
 var answer;
 var Pocketmoney = 5;
+//Prompts
+var userName = prompt("What is youe name?", "Bob")
 /***********************************************************************
  Main code
 ***********************************************************************/
