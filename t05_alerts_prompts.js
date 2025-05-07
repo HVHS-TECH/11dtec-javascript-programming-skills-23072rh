@@ -1,11 +1,11 @@
 /***********************************************************************
- Name of task: Learning how to make alerts and prompt pop up in Java Script
+ Name of task: Learning how to make alerts and prompts pop up in Java Script
  Name: Reuben Holdsworth
  Date written: 2/5/2025
  Purpose: Practicing with Java Script
  **********************************************************************/
  console.log("Running t01_alerts_prompts.js");
-/******** 
+/********
  Varibles
 ********/
 //Year 
@@ -26,6 +26,8 @@ var Pocketmoney = 5;
 console.log (Year);
 console.log (Age);
 console.log (Pocketmoney);
+//Alerts & Prompts variables
+var userName = prompt("Welcome to my Alerts & Prompts page!\nPlease enter your name.", "Bob")
 //Code
 console.log("Hi Reuben");
 console.log("As of", Year, "You are", Age);
@@ -36,8 +38,10 @@ console.log("You have", Pocketmoney, "dollars");
 answer = Pocketmoney / Num2;
 console.log("Half of you money is", answer);
 //Alerts & Prompts
-alert("Welcom to my Alerts & Prompts page");
-prompt("What is your name?");
+prompt("Welcome to my program " +userName+ "!\nHow old are you?", 15);
+prompt("Thats great " +userName+ "!\nHow much pocket money do you have?", "5 dollars");
+alert("So if I'm not mistaken")
+alert("As of " +Year+ " you are " +Age+ " years old\nYou were born in 2009\nIn 10 years you will be 25 years old\nYou have " +Pocketmoney+ " dollars\nHalf of your pocket money is 2.5 dollars");
 /***********************************************************************
  Functions
 ***********************************************************************/
