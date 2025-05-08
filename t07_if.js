@@ -28,8 +28,8 @@ console.log (Pocketmoney);
 
 //Alerts & Prompts
 prompt("Hi ", "Bob");
-alert("I predict you were born in", +Born);
-alert("Your pocket money right now is", +Pocketmoney);
+alert("I predict you were born in 2009");
+alert("Your pocket money right now is " +Pocketmoney+ " dollars");
 if(Pocketmoney >= 4) {
 alert("You CAN afford a chocolate bar")
 }else{
