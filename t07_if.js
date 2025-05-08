@@ -26,6 +26,7 @@ console.log (Age);
 console.log (Pocketmoney);
 //Code
 prompt("Hi ", "Bob");
+alert()
 if(Pocketmoney >= 4) {
 
 }
