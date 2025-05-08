@@ -25,16 +25,16 @@ console.log (Year);
 console.log (Age);
 console.log (Pocketmoney);
 //Code
+
+//Alerts & Prompts
 prompt("Hi ", "Bob");
 alert("I predict you were born in", Born);
 alert("Your pocket money right now is", Pocketmoney);
 if(Pocketmoney >= 4) {
 alert("You CAN afford a chocolate bar")
 }else{
-
+alert("Sorry you CANT afford a chocolate bar")
 }
-//Alerts & Prompts
-alert("Your chosen number was " +choice+ ". \nYou think " +Chocoarray[choice]);
 /***********************************************************************
  Functions
 ***********************************************************************/
