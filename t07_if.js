@@ -1,5 +1,5 @@
 /***********************************************************************
- Name of task: Learning how to conditional statements with Java Jcript
+ Name of task: Learning how to conditional statements (if/else) with Java Jcript
  Name: Reuben Holdsworth
  Date written: 8/5/2025
  Purpose: Practicing with Java Script
