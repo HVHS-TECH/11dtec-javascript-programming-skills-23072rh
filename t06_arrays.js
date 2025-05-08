@@ -20,8 +20,6 @@ var Pocketmoney = 5;
 //Arrays
 let Chocoarray = ["Chocolate is yuck.", "Chocolate is meh.", "Chocolate is pretty good.", "Chocolate is the best thing ever!!!"];
 let choice = prompt("Pick a number from 0 to 3");
-//Prompts
-alert("Your chosen number was " +choice+ ". You think " +Chocoarray[choice]);
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -32,7 +30,7 @@ console.log (Pocketmoney);
 //Code
 
 //Alerts & Prompts
-alert("You think " +Chocoarray[choice]+ +choice);
+alert("Your chosen number was " +choice+ ". You think " +Chocoarray[choice]);
 /***********************************************************************
  Functions
 ***********************************************************************/
