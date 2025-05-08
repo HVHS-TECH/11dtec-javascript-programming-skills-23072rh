@@ -29,6 +29,9 @@ console.log (Age);
 console.log (Pocketmoney);
 //Code
 
+if(Pocketmoney >= 4) {
+
+}
 //Alerts & Prompts
 alert("Your chosen number was " +choice+ ". \nYou think " +Chocoarray[choice]);
 /***********************************************************************
