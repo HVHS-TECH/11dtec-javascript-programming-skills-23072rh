@@ -8,7 +8,15 @@
 /******** 
  Varibles
 ********/
-
+//Year 
+var Year = 2025;
+var Born = 2009;
+//Numbers
+var Age = 15;
+var Num1 = 10;
+var Num2 = 2;
+var answer;
+var Pocketmoney = 5;
 //Arrays
 let Chocoarray = ["Chocolate is yuck.", "Chocolate is meh.", "Chocolate is pretty good.", "Chocolate is the best thing ever!!!"];
 let choice = prompt("Pick a number from 0 to 3");
