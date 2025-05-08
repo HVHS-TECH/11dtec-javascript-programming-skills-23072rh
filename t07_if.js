@@ -17,9 +17,6 @@ var Num1 = 10;
 var Num2 = 2;
 var answer;
 var Pocketmoney = 5;
-//Arrays
-let Chocoarray = ["Chocolate is yuck.", "Chocolate is meh.", "Chocolate is pretty good.", "Chocolate is the best thing ever!!!"];
-let choice = prompt("Pick a number from 0 to 3");
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -28,7 +25,7 @@ console.log (Year);
 console.log (Age);
 console.log (Pocketmoney);
 //Code
-alert("Hi Bob")
+prompt("Hi ", "Bob");
 if(Pocketmoney >= 4) {
 
 }
