@@ -16,7 +16,7 @@ var Age = 15;
 var Num1 = 10;
 var Num2 = 2;
 var answer;
-var Pocketmoney = 3;
+var Pocketmoney = 5;
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -28,7 +28,7 @@ console.log (Pocketmoney);
 
 //Alerts & Prompts
 prompt("Hi ", "Bob");
-alert("I predict you were born in 2009");
+alert("I predict you were born in " +Born);
 alert("Your pocket money right now is " +Pocketmoney+ " dollars");
 if(Pocketmoney >= 4) {
 alert("You CAN afford a chocolate bar")
