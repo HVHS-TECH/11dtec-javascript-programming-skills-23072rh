@@ -21,7 +21,7 @@ var Pocketmoney = 5;
 let Chocoarray = ["Chocolate is yuck", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing ever!!"];
 let choice = prompt("Pick a number from 0 to 3");
 //Prompts
-alert("You think" +choice+  +Chocoarray[choice]);
+alert("You think " +Chocoarray[choice]+ +choice);
 /***********************************************************************
  Main code
 ***********************************************************************/
