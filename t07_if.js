@@ -28,7 +28,7 @@ console.log (Year);
 console.log (Age);
 console.log (Pocketmoney);
 //Code
-alert("Hi")
+alert("Hi Bob")
 if(Pocketmoney >= 4) {
 
 }
