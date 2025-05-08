@@ -27,9 +27,15 @@ let choice = prompt("Pick a number from 0 to 3");
 console.log (Year);
 console.log (Age);
 console.log (Pocketmoney);
+//Alerts & Prompts variables
+var userName = prompt("Welcome to my Alerts & Prompts page!\nPlease enter your name.", "Bob")
 //Code
 
 //Alerts & Prompts
+prompt("Welcome to my program " +userName+ "!\nHow old are you?", 15);
+prompt("Thats great " +userName+ "!\nHow much pocket money do you have?", "5 dollars");
+alert("So if I'm not mistaken")
+alert("As of " +Year+ " you are " +Age+ " years old\nYou were born in 2009\nIn 10 years you will be 25 years old\nYou have " +Pocketmoney+ " dollars\nHalf of your pocket money is 2.5 dollars");
 alert("Your chosen number was " +choice+ ". \nYou think " +Chocoarray[choice]);
 /***********************************************************************
  Functions
