@@ -41,7 +41,7 @@ alert("You CAN afford a chocolate bar")
 alert("Sorry you CANT afford a chocolate bar")
 }
 
-
+//Loop 0-5
 
 /***********************************************************************
  Functions
