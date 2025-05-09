@@ -4,7 +4,7 @@
  Date written: 8/5/2025
  Purpose: Practicing with Java Script
  **********************************************************************/
- console.log("Running t01_alerts_prompts.js");
+ console.log("Running t07_if.js.js");
 /******** 
  Varibles
 ********/
