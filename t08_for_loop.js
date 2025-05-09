@@ -1,7 +1,7 @@
 /***********************************************************************
- Name of task: Learning how to conditional statements (if/else) with Java Jcript
+ Name of task: Learning how to use for loops with Java Jcript
  Name: Reuben Holdsworth
- Date written: 8/5/2025
+ Date written: 9/5/2025
  Purpose: Practicing with Java Script
  **********************************************************************/
  console.log("Running t07_if.js");
