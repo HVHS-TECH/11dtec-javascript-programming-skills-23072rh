@@ -42,7 +42,10 @@ alert("Sorry you CANT afford a chocolate bar")
 }
 
 //Loop 0-5
-
+console.log("Starting the FOR loop")
+for (count = 0; count < 10; count ++){
+    
+}
 /***********************************************************************
  Functions
 ***********************************************************************/
