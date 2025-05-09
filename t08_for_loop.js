@@ -17,7 +17,7 @@
 
 for (count = 0; count <= 4; count ++) {
     var forloop = prompt("give me a number");
-    var loop = 
+    var loop = prompt("hhhhh") +forloop;
 }
 
 /***********************************************************************
