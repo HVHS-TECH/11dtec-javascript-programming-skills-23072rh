@@ -16,7 +16,7 @@
 
 
 for (count = 0; count <= 5; count ++) {
-    var forloo = prompt("give me a number");
+    var forloop = prompt("give me a number");
 }
 
 /***********************************************************************
