@@ -25,7 +25,14 @@ console.log (Year);
 console.log (Age);
 console.log (Pocketmoney);
 //Code
-
+console.log("Hi Reuben");
+console.log("As of", Year, "You are", Age);
+console.log("You were born in", Born);
+answer = Age + Num1;
+console.log("In 10 years you will be", answer, "years old")
+console.log("You have", Pocketmoney, "dollars");
+answer = Pocketmoney / Num2;
+console.log("Half of you money is", answer);
 //Alerts & Prompts
 prompt("Hi ", "Bob");
 alert("I predict you were born in " +Born);
