@@ -16,7 +16,7 @@
 
 
 for (count = 0; count <= 5; count ++) {
-    var = prompt("give me a number");
+    var xxx = prompt("give me a number");
 }
 
 /***********************************************************************
