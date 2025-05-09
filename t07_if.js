@@ -21,9 +21,7 @@ var Pocketmoney = 5;
  Main code
 ***********************************************************************/
 //Variable logs
-console.log (Year);
-console.log (Age);
-console.log (Pocketmoney);
+
 //Code
 console.log("Hi Reuben");
 console.log("As of", Year, "You are", Age);
