@@ -42,6 +42,9 @@ alert("You CAN afford a chocolate bar")
 }else{
 alert("Sorry you CANT afford a chocolate bar")
 }
+
+
+
 /***********************************************************************
  Functions
 ***********************************************************************/
