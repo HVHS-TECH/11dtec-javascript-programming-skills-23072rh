@@ -8,19 +8,21 @@
 /******** 
  Varibles
 ********/
-
+var year = 2025;
 
 /***********************************************************************
  Main code
 ***********************************************************************/
-var num;
-var answer;
-for (count = 0; count <= 4; count ++) {
-    num = prompt("Give me a number");
-    num = Number(num)
-}
-answer = num+num+num+num+num
-console.log("The sum to your chosen numbers is " +answer);
+askUserName(); 
+askUserAge(); 
 /***********************************************************************
  Functions
 ***********************************************************************/
+function askUserName () {
+    askUserName = prompt("Whats your name?");
+    alert("Hello " +askUserName+ "!");
+}
+function askUserAge () {
+    askUserAge = prompt("How old are you " +askUserName+ "?");
+    alert("You are " +askUserAge+ " years old in " +year);
+}
