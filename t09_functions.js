@@ -13,12 +13,13 @@
 /***********************************************************************
  Main code
 ***********************************************************************/
+var num;
 var answer;
 for (count = 0; count <= 4; count ++) {
-    number = prompt("Give me a number between 0 - 10");
-    number = Number(num)
+    num = prompt("Give me a number");
+    num = Number(num)
 }
-answer = number+number+number+number+number
+answer = num+num+num+num+num
 console.log("The sum to your chosen numbers is " +answer);
 /***********************************************************************
  Functions
