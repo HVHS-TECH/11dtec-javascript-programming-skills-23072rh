@@ -9,7 +9,7 @@
  Varibles
 ********/
 var year = 2025;
-
+var pocketMoney = 5;
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -24,5 +24,5 @@ function askUserName () {
 }
 function askUserAge () {
     askUserAge = prompt("How old are you " +askUserName+ "?");
-    alert("You are " +askUserAge+ " years old in " +year);
+    alert("You are " +askUserAge+ " years old in " +year+ ".");
 }
