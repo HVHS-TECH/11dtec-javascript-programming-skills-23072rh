@@ -4,7 +4,7 @@
  Date written: 13/5/2025
  Purpose: Practicing with Java Script
  **********************************************************************/
- console.log("Running t09_functions.js");
+console.log("Running t09_functions.js");
 /******** 
  Varibles
 ********/
@@ -13,16 +13,25 @@ var pocketMoney = 5;
 /***********************************************************************
  Main code
 ***********************************************************************/
-askUserName(); 
-askUserAge(); 
+askUserName();
+askUserAge();
+askUserMoney();
 /***********************************************************************
  Functions
 ***********************************************************************/
-function askUserName () {
+function askUserName() {
     askUserName = prompt("Whats your name?");
-    alert("Hello " +askUserName+ "!");
+    alert("Hello " + askUserName + "!");
 }
-function askUserAge () {
-    askUserAge = prompt("How old are you " +askUserName+ "?");
-    alert("You are " +askUserAge+ " years old in " +year+ ".");
+function askUserAge() {
+    askUserAge = prompt("How old are you " + askUserName + "?");
+    alert("You are " + askUserAge + " years old in " + year + ".");
+}
+function askUserMoney() {
+    askUserMoney = prompt("How much pocket money do you have " + askUserName + "?");
+    if (Pocketmoney >= 4) {
+        alert("You CAN afford a chocolate bar");
+    } else {
+        alert("Sorry you CANT afford a chocolate bar");
+    }
 }
