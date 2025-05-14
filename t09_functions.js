@@ -29,7 +29,7 @@ function askUserAge() {
 }
 function askUserMoney() {
     askUserMoney = prompt("How much pocket money do you have " + askUserName + "?");
-    if (Pocketmoney >= 4) {
+    if (pocketMoney >= 4) {
         alert("You CAN afford a chocolate bar");
     } else {
         alert("Sorry you CANT afford a chocolate bar");
