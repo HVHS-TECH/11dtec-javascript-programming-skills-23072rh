@@ -28,7 +28,7 @@ function askUserAge() {
 }
 function askUserMoney() {
     var pocketMoney = askUserMoney = prompt("How much pocket money do you have " + askUserName + "?");
-    alert("So " + askUserName + " is" + askUserAge + " years old, and has " + pocketMoney + " dollars of pocket money as of " + year);
+    alert("So " + askUserName + " is " + askUserAge + " years old, and has " + pocketMoney + " dollars of pocket money as of " + year);
     if (pocketMoney >= 4) {
         alert("You CAN afford a chocolate bar");
     } else {
