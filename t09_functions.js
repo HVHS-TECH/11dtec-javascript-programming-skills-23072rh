@@ -9,7 +9,6 @@ console.log("Running t09_functions.js");
  Varibles
 ********/
 var year = 2025;
-var pocketMoney = 5;
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -28,6 +27,7 @@ function askUserAge() {
     alert("You are " + askUserAge + " years old in " + year + ".");
 }
 function askUserMoney() {
+    var pocketMoney = 5;
     askUserMoney = prompt("How much pocket money do you have " + askUserName + "?");
     if (pocketMoney >= 4) {
         alert("You CAN afford a chocolate bar");
