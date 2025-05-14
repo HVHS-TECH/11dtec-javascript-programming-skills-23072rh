@@ -1,7 +1,7 @@
 /***********************************************************************
- Name of task: Learning how to use for loops with Java Jcript
+ Name of task: Learning how to create functions to sort code with Java Jcript
  Name: Reuben Holdsworth
- Date written: 13/5/2025
+ Date written: 14/5/2025
  Purpose: Practicing with Java Script
  **********************************************************************/
 console.log("Running t09_functions.js");
