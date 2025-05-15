@@ -16,6 +16,9 @@ let userName;
 let userAge;
 let userMoney;
 start();
+askUserName();
+askUserAge();
+askUserMoney();
 /***********************************************************************
  Functions
 ***********************************************************************/
