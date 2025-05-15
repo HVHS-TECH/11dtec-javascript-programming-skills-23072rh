@@ -15,6 +15,7 @@ var year = 2025;
 let userName;
 let userAge;
 let userMoney;
+start();
 askUserName();
 askUserAge();
 askUserMoney();
