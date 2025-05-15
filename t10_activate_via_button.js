@@ -26,8 +26,7 @@ function start () {
     userName = askUserName();
     userAge = askUserAge();
     userMoney = askUserMoney();
-}
-function askUserName() {
+    function askUserName() {
     askUserName = prompt("Whats your name?");
     alert("Hello " + askUserName + "!");
 }
@@ -43,4 +42,5 @@ function askUserMoney() {
     } else {
         alert("Sorry you CANT afford a chocolate bar " + askUserName + ".");
     }
+}
 }
