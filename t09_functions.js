@@ -12,19 +12,12 @@ var year = 2025;
 /***********************************************************************
  Main code
 ***********************************************************************/
-let userName;
-let userAge;
-let userMoney;
-start();
-
+askUserName();
+askUserAge();
+askUserMoney();
 /***********************************************************************
  Functions
 ***********************************************************************/
-function start () {
-    userName = askUserName();
-    userAge = askUserAge();
-    userMoney = askMoney();
-}
 function askUserName() {
     askUserName = prompt("Whats your name?");
     alert("Hello " + askUserName + "!");
