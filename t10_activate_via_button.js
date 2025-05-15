@@ -22,7 +22,7 @@ start();
 function start () {
     userName = askUserName();
     userAge = askUserAge();
-    userMoney = askMoney();
+    userMoney = askUserMoney();
 }
 function askUserName() {
     askUserName = prompt("Whats your name?");
