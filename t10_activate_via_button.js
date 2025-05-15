@@ -15,7 +15,7 @@ console.log("Running t10_activate_via_button.js");
 let userName;
 let userAge;
 let userMoney;
-
+start();
 /***********************************************************************
  Functions
 ***********************************************************************/
