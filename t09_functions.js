@@ -18,6 +18,11 @@ askUserMoney();
 /***********************************************************************
  Functions
 ***********************************************************************/
+function start () {
+    userName = askUserName();
+    userAge = askUserAge();
+    userMoney = askMoney();
+}
 function askUserName() {
     askUserName = prompt("Whats your name?");
     alert("Hello " + askUserName + "!");
