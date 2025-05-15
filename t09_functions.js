@@ -12,6 +12,9 @@ var year = 2025;
 /***********************************************************************
  Main code
 ***********************************************************************/
+let userName;
+let userAge;
+let userMoney;
 askUserName();
 askUserAge();
 askUserMoney();
