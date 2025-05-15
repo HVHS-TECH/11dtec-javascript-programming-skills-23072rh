@@ -1,7 +1,7 @@
 /***********************************************************************
- Name of task: Learning how to use for loops with Java Jcript
+ Name of task: Learning how to use a button to start code with Java Jcript
  Name: Reuben Holdsworth
- Date written: 14/5/2025
+ Date written: 15/5/2025
  Purpose: Practicing with Java Script
  **********************************************************************/
 console.log("Running t10_activate_via_button.js");
