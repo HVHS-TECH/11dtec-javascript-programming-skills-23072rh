@@ -34,13 +34,14 @@ console.log("You have", Pocketmoney, "dollars");
 answer = Pocketmoney / Num2;
 console.log("Half of you money is", answer);
 //Alerts & Prompts
-prompt("Hi ", "Bob");
+var userName = alert("Hi "+ userName );
 alert("I predict you were born in " +Born);
-alert("Your pocket money right now is " +Pocketmoney+ " dollars");
+var pocketMoney = prompt("How much pocket money do you have?");
+alert("You have " + pocketMoney + " right now.");
 if(Pocketmoney >= 4) {
-alert("You CAN afford a chocolate bar")
+alert("You CAN afford a chocolate bar " + userName);
 }else{
-alert("Sorry you CANT afford a chocolate bar")
+alert("Sorry you CANT afford a chocolate bar " + userName );
 }
 
 
