@@ -12,9 +12,9 @@ console.log("Running t12_while_loop.js");
 /***********************************************************************
  Main code
 ***********************************************************************/
-var loop = prompt("Hello welcome to the loop\nWould you like to start the loop?");
 while (loop !="nigga"){
-    password = prompt("Are you sure you want the loop to comtinue");
+    var loop = prompt("Hello welcome to the loop\nWould you like to start the loop?");
+    loop = alert("The loop will continue");
 }
 alert("The loop is now finished");
 /***********************************************************************
