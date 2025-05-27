@@ -21,7 +21,7 @@ alert("The loop is now finished");
 */
 var password = prompt("Speak 'friend' and enter");
 
-while (password != "friend"){
+while (password != "friend") {
     password = alert("That's not the password.\nSpeak 'friend' and enter");
 }
 alert("Welcome friend!");
