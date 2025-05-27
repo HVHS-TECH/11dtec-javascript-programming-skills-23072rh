@@ -12,7 +12,7 @@ console.log("Running t12_while_loop.js");
 /***********************************************************************
  Main code
 ***********************************************************************/
-while (loop !="nigga"){
+while (loop != "n"){
     var loop = prompt("Hello welcome to the loop\nWould you like to start the loop?");
     loop = alert("The loop will continue");
 }
