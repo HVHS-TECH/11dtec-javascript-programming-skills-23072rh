@@ -12,7 +12,7 @@ var loop = prompt("Hello welcome to the loop\nWould you like to start the loop?"
 /***********************************************************************
  Main code
 ***********************************************************************/
-while (loop != "n") {
+while (loop != "no") {
     alert("The loop will continue");
     prompt("Hello welcome to the loop\nWould you like to continue the loop?");
 }
