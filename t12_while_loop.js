@@ -19,11 +19,12 @@ while (loop != "n"){
 }
 alert("The loop is now finished");
 */
-while (loop != "n"){
-    var loop = prompt("Hello welcome to the loop\nWould you like to start the loop?");
-    loop = alert("The loop will continue");
+var password = prompt("Speak 'friend' and enter");
+
+while (loop != "friend"){
+    loop = alert("That's not the password.\nSpeak 'friend' and enter");
 }
-alert("The loop is now finished");
+alert("Welcome friend!");
 
 /***********************************************************************
  Functions
