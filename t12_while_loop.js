@@ -12,20 +12,11 @@ console.log("Running t12_while_loop.js");
 /***********************************************************************
  Main code
 ***********************************************************************/
-/*
 while (loop != "n"){
     var loop = prompt("Hello welcome to the loop\nWould you like to start the loop?");
     loop = alert("The loop will continue");
 }
 alert("The loop is now finished");
-*/
-var password = prompt("Speak 'friend' and enter");
-
-while (password != "friend") {
-    password = alert("That's not the password.\nSpeak 'friend' and enter");
-}
-alert("Welcome friend!");
-
 /***********************************************************************
  Functions
 ***********************************************************************/
