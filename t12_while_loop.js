@@ -8,24 +8,19 @@ console.log("Running t12_while_loop.js");
 /*********************************************************************** 
  Varibles
 ***********************************************************************/
-var loop = prompt("Hello welcome to the loop\nWould you like to start the loop?");
 /***********************************************************************
  Main code
 ***********************************************************************/
-while (loop != "no") {
-    alert("The loop will continue");
-    prompt("Hello welcome to the loop\nWould you like to continue the loop?");
-}
-alert("The loop is now finished");
 /***********************************************************************
  Functions
 ***********************************************************************/
-/*
+
 function start() {
-   var loop = prompt("Hello welcome to the loop\nWould you like to start the loop?");
-while (loop !="n"){
-    loop = alert("The loop will now continue.");
+    var loop = prompt("Hello welcome to the loop\nWould you like to start the loop?");
+
+    while (loop != "no") {
+        alert("The loop will continue");
+        prompt("Hello welcome to the loop\nWould you like to continue the loop?");
+    }
+    alert("The loop is now finished");
 }
-alert("The loop is now finished");
-}
-*/
