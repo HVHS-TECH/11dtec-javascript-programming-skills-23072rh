@@ -15,7 +15,7 @@ console.log("Running t13_validation.js");
 var userName;
 
 userName = prompt("What's your name?")
-If ((!isNaN(userName)) || userName == null || userName =="" || userName == " ") {
+if ((!isNaN(userName)) || userName == null || userName =="" || userName == " ") {
 userName = prompt("Inavlid! You must enter a valid name please.");
 } else {
 alert("Welcome " + userName + " !");
