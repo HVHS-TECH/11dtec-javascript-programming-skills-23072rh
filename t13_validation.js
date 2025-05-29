@@ -17,9 +17,9 @@ var userName;
  Functions
 ***********************************************************************/
 function start() {
-    
+
 userName = prompt("What's your name?")
-If (userName == " ") {
+If (userName == ) {
 
 } else {
 
