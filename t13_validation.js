@@ -18,5 +18,10 @@ console.log("Running t13_validation.js");
 ***********************************************************************/
 
 function start() {
-   
+   var loop = prompt("Hello welcome to the loop\nWould you like to start the loop?");
+
+    while (loop != "no") {
+      
+    }
+    alert("The loop is now finished");
 }
