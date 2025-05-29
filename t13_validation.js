@@ -18,7 +18,7 @@ var userName;
 ***********************************************************************/
 function start() {
 userName = prompt("What's your name?")
-If () {
+If (userName == " ") {
 
 } else {
 
