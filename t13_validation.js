@@ -18,7 +18,11 @@ userName = prompt("What's your name?")
 while ((!isNaN(userName)) || userName == null || userName =="" || userName == " ") {
       userName = prompt("Inavlid! You must enter a valid name please.");
     }
-userName = prompt("Inavlid! You must enter a valid name please.");
+
+ if (userName == userName) {
+
+ }  
+
 /***********************************************************************
  Functions
 ***********************************************************************/
