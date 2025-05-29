@@ -19,10 +19,10 @@ var userName;
 function start() {
 
 userName = prompt("What's your name?")
-If (userName == ) {
-
+If ((!isNaN(userName)) || userName == null || userName =="" || userName == " ") {
+userName = prompt("Inavlid! You must enter a valid name please.");
 } else {
-
+alert("Welcome " + userName + " !");
 }
 
 }
