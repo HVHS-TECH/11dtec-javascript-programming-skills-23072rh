@@ -18,7 +18,7 @@ userName = prompt("What's your name?")
 if ((!isNaN(userName)) || userName == null || userName =="" || userName == " ") {
 userName = prompt("Inavlid! You must enter a valid name please.");
 } else {
-alert("Welcome " + userName + " !");
+alert("Welcome " + userName + "!");
 }
 /***********************************************************************
  Functions
