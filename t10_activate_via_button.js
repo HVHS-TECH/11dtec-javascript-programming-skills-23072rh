@@ -8,12 +8,18 @@ console.log("Running t10_activate_via_button.js");
 /******** 
  Varibles
 ********/
+var username;
+var userAge;
 var year = 2025;
 /***********************************************************************
  Main code
 ***********************************************************************/
-var username;
-var userAge;
+/* 
+<div class="w3-container">
+    <h1>Java script button</h1>
+    <button class="w3 button" type="button" onclick="start();">START</button>
+  </div>
+*/
 /***********************************************************************
  Functions
 ***********************************************************************/

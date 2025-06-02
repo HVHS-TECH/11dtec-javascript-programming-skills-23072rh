@@ -8,25 +8,41 @@ console.log("Running t13_validation.js");
 /*********************************************************************** 
  Varibles
 ***********************************************************************/
-
+let userName;
+let userAge;
+var minAge = 0;
+var maxAge = 130;
+let userAgeIsinvalid = true;
 /***********************************************************************
  Main code
 ***********************************************************************/
-var userName;
-
-userName = prompt("What's your name?")
-while ((!isNaN(userName)) || userName == null || userName =="" || userName == " ") {
-      userName = prompt("Inavlid! You must enter a valid name please.");
-    }
-
- if (userName == userName) {
-
- }  
-
+/* 
+<div class="w3-container">
+    <h1>Java script button</h1>
+    <button class="w3 button" type="button" onclick="start();">START</button>
+  </div>
+*/
 /***********************************************************************
  Functions
 ***********************************************************************/
 function start() {
-
-
+  //Asking the user what their name is
+  userName = prompt("What's your name?")
+  while (userName == null || userName == "" || userName == " " || (!isNaN(userName))) {
+    prompt("Inavlid! You must enter a valid name please.");
+  }
+  alert("Welcome " + userName + "!");
+console.log("nanan")
+  //Asking the user how old they are
+  while (userAgeIsinvalid) {
+    userAge = prompt("Please enter you age " + userName + ".");
+    if (userAge == null || userAge == "" || userAge == " " || !isNaN(userAge) || userAge < minAge || userAge > maxAge) {
+      alert("Inavlid! You must enter a age between " + maxAge + " and " + minAge +" please.");
+    } else {
+      userAgeIsinvalid = false;
+    }
+  }
 }
+
+
+
