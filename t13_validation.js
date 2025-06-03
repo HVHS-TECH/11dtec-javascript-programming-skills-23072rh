@@ -28,14 +28,14 @@ let userAgeIsinvalid = true;
 function start() {
   //Asking the user what their name is
   userName = prompt("What's your name?")
-  while (userName == null || userName == "" || userName == " " || (!isNaN(userName))) {
+  while (userName == null || userName == "" || userName == " " || !isNaN(userName)) {
     prompt("Inavlid! You must enter a valid name please.");
   }
   alert("Welcome " + userName + "!");
   //Asking the user how old they are
   while (userAgeIsinvalid) {
     userAge = prompt("Please enter you age " + userName + ".");
-    if (userAge == null || userAge == "" || userAge == " " || !isNaN(userAge) || userAge < minAge || userAge > maxAge) {
+    if (userAge == null || userAge == "" || userAge == " " || !isNaN(userAge) || userAge > minAge || userAge < maxAge) {
       alert("Inavlid! You must enter a age between " + minAge + " and " + maxAge +" please.");
     } else {
       userAgeIsinvalid = false;
