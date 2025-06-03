@@ -41,4 +41,5 @@ function start() {
       userAgeIsinvalid = false;
     }
   }
+  alert("You are " + userAge + " years old " + userName + ".");
 }
