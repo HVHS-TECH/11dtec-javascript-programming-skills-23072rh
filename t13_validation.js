@@ -26,6 +26,7 @@ let userAgeIsinvalid = true;
  Functions
 ***********************************************************************/
 function start() {
+  /*
   //Asking the user what their name is
   userName = prompt("What's your name?")
   while (userName == null || userName == "" || userName == " " || !isNaN(userName)) {
@@ -42,4 +43,6 @@ function start() {
     }
   }
   alert("You are " + userAge + " years old " + userName + ".");
+  */
+ 
 }
