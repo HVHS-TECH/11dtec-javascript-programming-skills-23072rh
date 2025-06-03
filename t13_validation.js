@@ -32,17 +32,13 @@ function start() {
     prompt("Inavlid! You must enter a valid name please.");
   }
   alert("Welcome " + userName + "!");
-console.log("nanan")
   //Asking the user how old they are
   while (userAgeIsinvalid) {
     userAge = prompt("Please enter you age " + userName + ".");
     if (userAge == null || userAge == "" || userAge == " " || !isNaN(userAge) || userAge < minAge || userAge > maxAge) {
-      alert("Inavlid! You must enter a age between " + maxAge + " and " + minAge +" please.");
+      alert("Inavlid! You must enter a age between " + minAge + " and " + maxAge +" please.");
     } else {
       userAgeIsinvalid = false;
     }
   }
 }
-
-
-
