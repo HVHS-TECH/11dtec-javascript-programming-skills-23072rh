@@ -29,7 +29,7 @@ function start() {
   //Asking the user what their name is
   userName = prompt("What's your name?")
   while (userName == null || userName == "" || userName == " " || !isNaN(userName)) {
-    prompt("Inavlid! You must enter a valid name please.");
+    userName = prompt("Inavlid! You must enter a valid name please.");
   }
   alert("Welcome " + userName + "!");
   //Asking the user how old they are
