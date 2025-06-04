@@ -35,7 +35,7 @@ let userAgeIsInvalid = true;
  Functions
 ***********************************************************************/
 function start() {
-  /*
+  
   //Asking the user what their name is
   userName = prompt("What's your name?")
   while (userName == null || userName == "" || userName == " " || !isNaN(userName)) {
@@ -43,16 +43,6 @@ function start() {
   }
   alert("Welcome " + userName + "!");
   //Asking the user how old they are
-  while (userAgeIsinvalid) {
-    userAge = prompt("Please enter you age " + userName + ".");
-    if (userAge == "" || userAge == " " || !isNaN(userAge) || userAge > minAge || userAge < maxAge) {
-      alert("Inavlid! You must enter a age between " + minAge + " and " + maxAge + " please.");
-    } else {
-      userAgeIsinvalid = false;
-    }
-  }
-  alert("You are " + userAge + " years old " + userName + ".");
-  */
   while (userAgeIsInvalid) {
     userAge = prompt("Please enter your age.");
     if (userAge == null || userAge == "" || userAge == " " || isNaN(userAge) || userAge < MINAGE || userAge > MAXAGE) {
@@ -61,5 +51,5 @@ function start() {
       userAgeIsInvalid = false;
     }
   }
-  console.log("You are " + userAge);
+  alert("You are " + userAge + " years old " + userName + ".");
 }
