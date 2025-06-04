@@ -33,7 +33,6 @@ function start() {
   while (userName == null || userName == "" || userName == " " || !isNaN(userName)) {
     userName = prompt("Inavlid! You must enter a valid name please.");
   }
-  console.log("nigga")
   alert("Welcome " + userName + "!");
   //Asking the user how old they are
   while (userAgeIsInvalid) {
