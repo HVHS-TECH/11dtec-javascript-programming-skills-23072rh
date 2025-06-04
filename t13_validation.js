@@ -45,5 +45,5 @@ function start() {
   }
   alert("You are " + userAge + " years old " + userName + ".");
   //Asking the user how much pocket money they have and telling them if they can affford certain chocolate bars
-  alert("In the store today we have ")
+  alert("In the store today we have 5 chocolate bars arngin from 1 - 5 dollars\n")
 }
