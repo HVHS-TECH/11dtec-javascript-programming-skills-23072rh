@@ -15,6 +15,8 @@ let userAge;
 const minAge = 0;
 const maxAge = 130;
 let userAgeIsInvalid = true;
+//Pocket money variables
+let pocketMoney;
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -47,5 +49,7 @@ function start() {
   //Telling the user the needed information about the chocolate bars at the store
   alert("In the store today we have 5 chocolate bars ranging from 1 - 5 dollars:\nMars bar-$1\nMoro bar-$2\nKing Size Crunchy-$3\nDairy Milk Block-$4\nLindt Block-$5");
   //Asking the user how much pocket omnbey they have
-  prompt("How much pocket money do you have " + userName + "?");
+  pocketMoney = prompt("How much pocket money do you have " + userName + "?");
+  alert("So " + userName + " has" + pocketMoney + " dollars.");
+  while (pocketMoney <)
 }
