@@ -14,7 +14,7 @@ let userName;
 let userAge;
 const minAge = 0;
 const maxAge = 130;
-let userAgeIsinvalid = true;
+let userAgeIsInvalid = true;
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -33,6 +33,7 @@ function start() {
   while (userName == null || userName == "" || userName == " " || !isNaN(userName)) {
     userName = prompt("Inavlid! You must enter a valid name please.");
   }
+  console.log("nigga")
   alert("Welcome " + userName + "!");
   //Asking the user how old they are
   while (userAgeIsInvalid) {
