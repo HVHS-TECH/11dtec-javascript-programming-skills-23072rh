@@ -8,11 +8,20 @@ console.log("Running t13_validation.js");
 /*********************************************************************** 
  Varibles
 ***********************************************************************/
+//userName variable
 let userName;
+/*
+//userAge variables
 let userAge;
 var minAge = 0;
 var maxAge = 130;
 let userAgeIsinvalid = true;
+*/
+//Debugging variables
+const MINAGE = 0;
+const MAXAGE = 130;
+let userAge;
+let userAgeIsInvalid = true;
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -44,5 +53,13 @@ function start() {
   }
   alert("You are " + userAge + " years old " + userName + ".");
   */
- 
+  while (userAgeIsInvalid) {
+    userAge = prompt("Please enter your age.");
+    if (userAge == null || userAge == "" || userAge == " " || isNaN(userAge) || userAge < MINAGE || userAge > MAXAGE) {
+      alert("Invalid input: you must enter a valid age between " + MINAGE + " and " + MAXAGE);
+    } else {
+      userAgeIsInvalid = false;
+    }
+  }
+  console.log("You are " + userAge);
 }
