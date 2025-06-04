@@ -10,18 +10,11 @@ console.log("Running t13_validation.js");
 ***********************************************************************/
 //userName variable
 let userName;
-/*
 //userAge variables
 let userAge;
-var minAge = 0;
-var maxAge = 130;
+const minAge = 0;
+const maxAge = 130;
 let userAgeIsinvalid = true;
-*/
-//Debugging variables
-const MINAGE = 0;
-const MAXAGE = 130;
-let userAge;
-let userAgeIsInvalid = true;
 /***********************************************************************
  Main code
 ***********************************************************************/
