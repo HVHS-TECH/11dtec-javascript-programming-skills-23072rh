@@ -44,6 +44,6 @@ function start() {
     }
   }
   alert("You are " + userAge + " years old " + userName + ".");
-  //Asking the user how much pocket money they have and telling them if they can affford certain chocolate bars
+  //Telling the user the needed information about the chocolate bars at the store
   alert("In the store today we have 5 chocolate bars ranging from 1 - 5 dollars:\nMars bar-$1\nMoro bar-$2\nKing Size Crunchy-$3\nDairy Milk Block-$4\nLindt Block-$5");
 }
