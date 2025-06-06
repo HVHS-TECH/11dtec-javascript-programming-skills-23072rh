@@ -4,7 +4,7 @@
  Date written: 8/5/2025
  Purpose: Practicing with Java Script
  **********************************************************************/
- console.log("Running t06_arrays.js");
+console.log("Running t06_arrays.js");
 /******** 
  Varibles
 ********/
@@ -16,13 +16,13 @@ let choice = prompt("Pick a number from 0 to 3");
  Main code
 ***********************************************************************/
 //Variable logs
-console.log (Year);
-console.log (Age);
-console.log (Pocketmoney);
+console.log(Year);
+console.log(Age);
+console.log(Pocketmoney);
 //Code
 
 //Alerts & Prompts
-alert("Your chosen number was " +choice+ ". \nYou think " +Chocoarray[choice]);
+alert("Your chosen number was " + choice + ". \nYou think " + Chocoarray[choice]);
 /***********************************************************************
  Functions
 ***********************************************************************/
