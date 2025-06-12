@@ -51,4 +51,5 @@ function start() {
   //Asking the user how much pocket money they have
   pocketMoney = prompt("How much pocket money do you have " + userName + "?");
   alert("So " + userName + " has " + pocketMoney + " dollars.");
+  
 }
