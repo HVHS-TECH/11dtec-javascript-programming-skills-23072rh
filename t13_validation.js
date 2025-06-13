@@ -17,6 +17,10 @@ const maxAge = 130;
 let userAgeIsInvalid = true;
 //Pocket money variables
 let pocketMoney;
+//Choclate bar array
+let chocArray = [""];
+//Users choice of car
+let choice;
 /***********************************************************************
  Main code
 ***********************************************************************/
