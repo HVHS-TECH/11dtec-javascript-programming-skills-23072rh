@@ -58,5 +58,5 @@ function start() {
     alert("Sorry we don't have any choclate bars for " + pocketMoney + " dollars.\nYou must have 1 - 5 dollars in order to by a choclate bar");
     choice = prompt("How much pocket money do you have " + userName + "?");
   }
-  alert("You can afford " + chocoArray[choice] + " from the store");
+  choice = alert("You can afford " + chocoArray[choice] + " from the store");
 }
