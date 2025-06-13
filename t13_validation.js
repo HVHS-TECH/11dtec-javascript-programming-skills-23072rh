@@ -1,7 +1,7 @@
 /***********************************************************************
  Name of task: Learning how to validate code with Java Jcript
  Name: Reuben Holdsworth
- Date written: 28/5/2025
+ Date written: 13/6/2025
  Purpose: Practicing with Java Script
  **********************************************************************/
 console.log("Running t13_validation.js");
@@ -18,7 +18,7 @@ let userAgeIsInvalid = true;
 //Pocket money variables
 let pocketMoney;
 //Choclate bar array
-let chocArray = ["Nothing", "The Mars bar", "The Moro bar", "The King size crunchy", "The Lindt block"];
+let chocArray = ["Nothing", "the Mars bar", "the Moro bar", "the King size crunchy", "the Dairy milk block", "the Lindt block"];
 //Users choice of chocolate
 let choice;
 /***********************************************************************
@@ -58,5 +58,8 @@ function start() {
     alert("Sorry we don't have any choclate bars for " + pocketMoney + " dollars.\nYou must have 1 - 5 dollars in order to by a choclate bar");
     choice = prompt("How much pocket money do you have " + userName + "?");
   }
+  console.log(chocArray[choice])
+  console.log(chocArray)
+  console.log(choice)
   alert("You can afford " + chocArray[choice] + " from the store");
 }
