@@ -21,6 +21,11 @@ let pocketMoney;
 let chocArray = ["Nothing", "The Mars bar", "The Moro bar", "The King size crunchy", "The Lindt block"];
 //Users choice of car
 let choice;
+/*
+let carArray = ["Walk", "BAC Mono", "Mazda MX5", "Toyota Yaris", "Mini Cooper", "KIA Sportage", "Mitsubishi Triton", "Mitsubishi Outlander", "KIA Carnival"];
+//Users choice of car
+let choice;
+*/
 /***********************************************************************
  Main code
 ***********************************************************************/
