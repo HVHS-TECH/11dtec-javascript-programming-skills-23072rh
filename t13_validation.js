@@ -19,13 +19,8 @@ let userAgeIsInvalid = true;
 let pocketMoney;
 //Choclate bar array
 let chocArray = ["Nothing", "The Mars bar", "The Moro bar", "The King size crunchy", "The Lindt block"];
-//Users choice of car
+//Users choice of chocolate
 let choice;
-/*
-let carArray = ["Walk", "BAC Mono", "Mazda MX5", "Toyota Yaris", "Mini Cooper", "KIA Sportage", "Mitsubishi Triton", "Mitsubishi Outlander", "KIA Carnival"];
-//Users choice of car
-let choice;
-*/
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -63,15 +58,5 @@ function start() {
     alert("Sorry we don't have any choclate bars for " + pocketMoney + " dollars.\nYou must have 1 - 5 dollars in order to by a choclate bar");
     choice = prompt("How much pocket money do you have " + userName + "?");
   }
-  choice = alert("You can afford " + chocArray[choice] + " from the store");
-  /*
-  choice = prompt("So " + userName + "...\nHow many seats would you like inside your car?");
-    while (choice < 0 || choice > 8) {
-        choice = prompt("Sorry we don't have any cars with " + choice + " seats right now.\nPlease pick a number of seats between 1 and 8.");
-    }
-    //userSeats now has choices value for the rest of the code
-    userSeats = choice;
-    alert("You would like " + choice + " seats in your rental car.\nWe have a " + carArray[choice] + " in stock for you.");
-    //Ask the user how many days they would like to rent the car for
-*/
+  alert("You can afford " + chocArray[choice] + " from the store");
 }
