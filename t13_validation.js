@@ -18,7 +18,7 @@ let userAgeIsInvalid = true;
 //Pocket money variables
 let pocketMoney;
 //Choclate bar array
-let chocArray = [""];
+let chocArray = ["Nothing", "The Mars bar", "The Moro bar", "The King size crunchy", "The Lindt block"];
 //Users choice of car
 let choice;
 /***********************************************************************
@@ -53,9 +53,10 @@ function start() {
   //Telling the user the needed information about the chocolate bars at the store
   alert("In the store today we have 5 chocolate bars ranging from 1 - 5 dollars:\nMars bar-$1\nMoro bar-$2\nKing Size Crunchy-$3\nDairy Milk Block-$4\nLindt Block-$5");
   //Asking the user how much pocket money they have
-  pocketMoney = prompt("How much pocket money do you have " + userName + "?");
-  while (pocketMoney < 1 || pocketMoney > 5) {
-    alert("Sorry we don't have any choclate bars for " + pocketMoney + " dollars.\nYou must have 1 - 5 dollars in order to by a choclate bar")
+  choice = prompt("How much pocket money do you have " + userName + "?");
+  while (choice < 1 || choice > 5) {
+    alert("Sorry we don't have any choclate bars for " + pocketMoney + " dollars.\nYou must have 1 - 5 dollars in order to by a choclate bar");
+    choice = prompt("How much pocket money do you have " + userName + "?");
   }
-
+choice = prompt("How much pocket money do you have " + userName + "?");
 }
