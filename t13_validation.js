@@ -51,7 +51,7 @@ function start() {
   //Asking the user how much pocket money they have
   pocketMoney = prompt("How much pocket money do you have " + userName + "?");
   while (pocketMoney < 1 || pocketMoney > 5) {
-    
+    alert("Sorry we don't have any choclate bars for " + pocketMoney + " dollars.\nYou muct")
   }
 
 }
