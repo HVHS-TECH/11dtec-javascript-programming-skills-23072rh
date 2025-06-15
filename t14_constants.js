@@ -43,7 +43,7 @@ function start() {
   //Asking the user how old they are
   while (userAgeIsInvalid) {
     userAge = prompt("Please enter your age.");
-    if (userAge == null || userAge == "" || userAge == " " || isNaN(userAge) || userAge < minAge || userAge > maxAge) {
+    if (userAge == null || userAge == "" || userAge == " " || isNaN(userAge) || userAge < MINAGE || userAge > MAXAGE) {
       alert("Invalid input: you must enter a valid age between " + MINAGE + " and " + MAXAGE);
     } else {
       userAgeIsInvalid = false;
