@@ -20,7 +20,8 @@ let pocketMoney;
 //Choclate bars array
 let chocArray = ["Nothing", "The Mars bar", "The Moro bar", "The King size crunchy", "The Dairy milk block", "The Lindt block"];
 //Users choice of chocolate
-let chocolate;
+//Chocolate is "Nothing" because we don't know how much pocket money the user has, and what they can afford
+let chocolate = "Nothing";
 //Choclate bars price array
 //The contents of the array doesn't have strings because prices are numbers not words
 let chocPriceArray = [0, 2, 2.50, 3, 6, 7];
