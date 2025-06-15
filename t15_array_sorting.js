@@ -75,7 +75,7 @@ function start() {
 
   for (let i = 1; i < chocPriceArray.length; i++) {
     if (pocketMoney >= chocPriceArray[i]) {
-      //Made chocolate
+      //Made chocolate and price have the values of the arrays
       chocolate = chocArray[i];
       price = chocPriceArray[i];
     }
