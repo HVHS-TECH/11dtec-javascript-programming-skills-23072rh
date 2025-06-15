@@ -22,7 +22,7 @@ let chocArray = ["Nothing", "The Mars bar", "The Moro bar", "The King size crunc
 //Users choice of chocolate
 let chocolate;
 //Choclate bars price array
-let chocPriceArray = ["0", "2.00", "2.50", "3.00", "6.00", "7.00"];
+let chocPriceArray = [0, 2, 2.50, 3, 6, 7];
 //The price of chocolate
 let price;
 /***********************************************************************
@@ -48,7 +48,7 @@ function start() {
   while (userAgeIsInvalid) {
     userAge = prompt("Please enter your age.");
     if (userAge == null || userAge == "" || userAge == " " || isNaN(userAge) || userAge < MINAGE || userAge > MAXAGE) {
-      alert("Invalid input: you must enter a valid age between " + MINAGE + " and " + MAXAGE);
+      alert("Inavlid! You must enter a valid age between " + MINAGE + " and " + MAXAGE);
     } else {
       userAgeIsInvalid = false;
     }
@@ -62,9 +62,9 @@ function start() {
     + chocArray[4] + " for " + chocPriceArray[4] + " dollars.\n"
     + chocArray[5] + " for " + chocPriceArray[5] + " dollars.\n");
   //Asking the user how much pocket money they have
-  pocketMoney = prompt("How much pocket money do you have, " + userName + "? (1 - 10 dollars)");
+  pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
   while (isNaN(pocketMoney) || pocketMoney < 1 || pocketMoney > 10) {
-    alert("Invalid input. Please enter a number between 1 and 10.");
+    alert("Inavlid! Please enter an amount of pocket money between 1 and 10 dollars.");
     pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
   }
 
