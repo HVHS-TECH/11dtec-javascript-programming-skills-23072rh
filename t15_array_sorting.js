@@ -70,9 +70,7 @@ function start() {
   }
 //Made pocketMoney into a number so that the computer doesnt get confused thinking prices are words
   pocketMoney = Number(pocketMoney);
-
- 
-
+  //using the loop to go through arrays
   for (let i = 1; i < chocPriceArray.length; i++) {
     if (pocketMoney >= chocPriceArray[i]) {
       //Made chocolate and price have the values of the arrays
