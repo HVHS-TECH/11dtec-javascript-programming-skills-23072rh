@@ -22,7 +22,7 @@ let chocArray = ["Nothing", "the Mars bar", "the Moro bar", "the King size crunc
 //Users choice of chocolate
 let chocolate;
 //Choclate bars price array
-let chocPriceArray = ["Nothing", "the Mars bar", "the Moro bar", "the King size crunchy", "the Dairy milk block", "the Lindt block"];
+let chocPriceArray = ["0", "2.00", "2.50", "3.00", "6.00", "7.00"];
 //The price of chocolate
 let price;
 /***********************************************************************
