@@ -55,7 +55,7 @@ function start() {
   }
   userAge = alert("You are " + userAge + " years old " + userName + ".");
   //Telling the user the needed information about the chocolate bars at the store
-  alert("In the store today we have 5 chocolate bars ranging from 1 - 5 dollars:\n"
+  alert("In the store today we have 5 chocolate bars ranging from 2 - 7 dollars:\n"
     + chocArray[1] + " for " + chocPriceArray[1] + " dollars.\n"
     + chocArray[2] + " for " + chocPriceArray[2] + " dollars.\n"
     + chocArray[3] + " for " + chocPriceArray[3] + " dollars.\n"
@@ -64,8 +64,8 @@ function start() {
   //Asking the user how much pocket money they have
   chocolate = prompt("How much pocket money do you have " + userName + "?");
   while (chocolate < 1 || chocolate > 5) {
-    alert("Sorry we don't have any choclate bars for " + pocketMoney + " dollars.\nYou must have 1 - 5 dollars in order to by a choclate bar");
+    alert("Sorry we don't have any choclate bars for " + pocketMoney + " dollars.\nYou must have 2 - 57dollars in order to by a choclate bar");
     chocolate = prompt("How much pocket money do you have " + userName + "?");
   }
-  alert("You can afford " + chocArray[chocolate] + " from the store");
+  alert("You can afford " + chocArray[chocolate] + " for " + chocPriceArray[price] + " dollars.");
 }
