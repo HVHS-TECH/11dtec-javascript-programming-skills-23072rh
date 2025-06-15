@@ -72,6 +72,7 @@ function start() {
 /***********************************************************************
  Functions
 ***********************************************************************/
+/*
 function getUserName() {
     //Asking the user what their name is
     userName = prompt("What's your name?")
