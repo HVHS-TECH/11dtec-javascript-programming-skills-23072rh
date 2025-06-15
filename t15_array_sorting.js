@@ -22,6 +22,7 @@ let chocArray = ["Nothing", "The Mars bar", "The Moro bar", "The King size crunc
 //Users choice of chocolate
 let chocolate;
 //Choclate bars price array
+//The contents of the array doesn't have strings because prices are numbers not words
 let chocPriceArray = [0, 2, 2.50, 3, 6, 7];
 //The price of chocolate
 //Price is zero because we don't know how much pocket money the user has, and what they can afford
@@ -70,7 +71,7 @@ function start() {
   }
 //Made pocketMoney into a number so that the computer doesnt get confused thinking prices are words
   pocketMoney = Number(pocketMoney);
-  //using the loop to go through arrays
+  //using the loop to go through arrays to see what the user can afford
   for (let i = 1; i < chocPriceArray.length; i++) {
     if (pocketMoney >= chocPriceArray[i]) {
       //Made chocolate and price have the values of the arrays
@@ -78,7 +79,7 @@ function start() {
       price = chocPriceArray[i];
     }
   }
-  alert("With the " + pocketMoney + " you have, you can afford " + chocolate + " for " + price + " dollars.");
+  alert("With the " + pocketMoney + " dollars you have, you can afford " + chocolate + " for " + price + " dollars.");
 }
 /*
  chocolate = prompt("How much pocket money do you have " + userName + "?");
