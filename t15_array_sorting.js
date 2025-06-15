@@ -56,7 +56,6 @@ function start() {
   userAge = alert("You are " + userAge + " years old " + userName + ".");
   //Telling the user the needed information about the chocolate bars at the store
   alert("In the store today we have 5 chocolate bars ranging from 1 - 5 dollars:\n"
-    + chocArray[0] + " for " + chocPriceArray[0] + " dollars.\n"
     + chocArray[1] + " for " + chocPriceArray[1] + " dollars.\n"
     + chocArray[2] + " for " + chocPriceArray[2] + " dollars.\n"
     + chocArray[3] + " for " + chocPriceArray[3] + " dollars.\n"
