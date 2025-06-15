@@ -67,20 +67,21 @@ function start() {
     alert("Inavlid! Please enter an amount of pocket money between 1 and 10 dollars.");
     pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
   }
-
-  pocketMoney = Number(pocketMoney); // Only this one conversion needed
+//Made pocketMoney into a number so that the computer dosnt get confused thinking prices are words
+  pocketMoney = Number(pocketMoney);
 
   let chocolate = "Nothing";
   let price = 0;
 
   for (let i = 1; i < chocPriceArray.length; i++) {
     if (pocketMoney >= chocPriceArray[i]) {
+      //Made chocolate
       chocolate = chocArray[i];
       price = chocPriceArray[i];
     }
   }
 
-  alert("With $" + pocketMoney + ", you can afford: " + chocolate + " which costs $" + price);
+  alert("You can afford" + pocketMoney + ", you can afford: " + chocolate + " which costs $" + price);
 }
 /*
  chocolate = prompt("How much pocket money do you have " + userName + "?");
