@@ -62,13 +62,31 @@ function start() {
     + chocArray[4] + " for " + chocPriceArray[4] + " dollars.\n"
     + chocArray[5] + " for " + chocPriceArray[5] + " dollars.\n");
   //Asking the user how much pocket money they have
-  
-}
- /*
-  chocolate = prompt("How much pocket money do you have " + userName + "?");
-  while (chocolate < 1 || chocolate > 5) {
-    alert("Sorry we don't have any choclate bars for " + chocolate + " dollars.\nYou must have 1 - 10 dollars in order to by a choclate bar");
-    chocolate = prompt("How much pocket money do you have " + userName + "?");
+  pocketMoney = prompt("How much pocket money do you have, " + userName + "? (1 - 10 dollars)");
+  while (isNaN(pocketMoney) || pocketMoney < 1 || pocketMoney > 10) {
+    alert("Invalid input. Please enter a number between 1 and 10.");
+    pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
   }
-  alert("You can afford " + chocArray[chocolate] + " for " + chocPriceArray[price] + " dollars.");
-  */
+
+  pocketMoney = Number(pocketMoney); // Only this one conversion needed
+
+  let chocolate = "Nothing";
+  let price = 0;
+
+  for (let i = 1; i < chocPriceArray.length; i++) {
+    if (pocketMoney >= chocPriceArray[i]) {
+      chocolate = chocArray[i];
+      price = chocPriceArray[i];
+    }
+  }
+
+  alert("With $" + pocketMoney + ", you can afford: " + chocolate + " which costs $" + price);
+}
+/*
+ chocolate = prompt("How much pocket money do you have " + userName + "?");
+ while (chocolate < 1 || chocolate > 5) {
+   alert("Sorry we don't have any choclate bars for " + chocolate + " dollars.\nYou must have 1 - 10 dollars in order to by a choclate bar");
+   chocolate = prompt("How much pocket money do you have " + userName + "?");
+ }
+ alert("You can afford " + chocArray[chocolate] + " for " + chocPriceArray[price] + " dollars.");
+ */
