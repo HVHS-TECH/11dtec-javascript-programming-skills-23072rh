@@ -64,7 +64,7 @@ function start() {
   //Asking the user how much pocket money they have
   chocolate = prompt("How much pocket money do you have " + userName + "?");
   while (chocolate < 1 || chocolate > 5) {
-    alert("Sorry we don't have any choclate bars for " + pocketMoney + " dollars.\nYou must have 1 - 10 dollars in order to by a choclate bar");
+    alert("Sorry we don't have any choclate bars for " + chocolate + " dollars.\nYou must have 1 - 10 dollars in order to by a choclate bar");
     chocolate = prompt("How much pocket money do you have " + userName + "?");
   }
   alert("You can afford " + chocArray[chocolate] + " for " + chocPriceArray[price] + " dollars.");
