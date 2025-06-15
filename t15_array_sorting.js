@@ -81,7 +81,7 @@ function start() {
     }
   }
 
-  alert("You can afford" + pocketMoney + ", you can afford: " + chocolate + " which costs $" + price);
+  alert("With the " + pocketMoney + " you have, you can afford " + chocolate + " for " + price +);
 }
 /*
  chocolate = prompt("How much pocket money do you have " + userName + "?");
