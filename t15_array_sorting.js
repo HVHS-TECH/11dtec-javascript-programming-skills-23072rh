@@ -24,7 +24,8 @@ let chocolate;
 //Choclate bars price array
 let chocPriceArray = [0, 2, 2.50, 3, 6, 7];
 //The price of chocolate
-let price;
+//Price is zero because we don't know how much pocket money the user has, and what they can afford
+let price = 0;
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -70,8 +71,7 @@ function start() {
 //Made pocketMoney into a number so that the computer doesnt get confused thinking prices are words
   pocketMoney = Number(pocketMoney);
 
-  let chocolate = "Nothing";
-  let price = 0;
+ 
 
   for (let i = 1; i < chocPriceArray.length; i++) {
     if (pocketMoney >= chocPriceArray[i]) {
