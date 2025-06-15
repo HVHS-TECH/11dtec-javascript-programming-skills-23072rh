@@ -71,7 +71,7 @@ function start() {
   }
 //Made pocketMoney into a number so that the computer doesnt get confused thinking prices are words
   pocketMoney = Number(pocketMoney);
-  //using the loop to go through arrays to see what the user can afford
+  //Using the loop to go through arrays to see what the user can afford
   for (let i = 1; i < chocPriceArray.length; i++) {
     if (pocketMoney >= chocPriceArray[i]) {
       //Made chocolate and price have the values of the arrays
@@ -81,11 +81,3 @@ function start() {
   }
   alert("With the " + pocketMoney + " dollars you have, you can afford " + chocolate + " for " + price + " dollars.");
 }
-/*
- chocolate = prompt("How much pocket money do you have " + userName + "?");
- while (chocolate < 1 || chocolate > 5) {
-   alert("Sorry we don't have any choclate bars for " + chocolate + " dollars.\nYou must have 1 - 10 dollars in order to by a choclate bar");
-   chocolate = prompt("How much pocket money do you have " + userName + "?");
- }
- alert("You can afford " + chocArray[chocolate] + " for " + chocPriceArray[price] + " dollars.");
- */
