@@ -153,7 +153,7 @@ let chocolate = "nothing";
 let chocPriceArray = [0, 2, 2.50, 3, 6, 7];
 //The price of chocolate
 //Price is zero because we don't know how much pocket money the user has, and what they can afford
-let price = 0;
+const price = 0;
 /***********************************************************************
  Main code
 ***********************************************************************/
@@ -227,3 +227,13 @@ function getPocketMoney() {
         if (pocketMoney == null) return;
     }
 }
+
+
+
+
+
+
+
+
+
+
