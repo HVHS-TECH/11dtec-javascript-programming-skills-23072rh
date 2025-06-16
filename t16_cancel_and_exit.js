@@ -204,6 +204,7 @@ function getUserName() {
     document.getElementById("messageArea").innerHTML += "Welcome " + userName + "!<br>";
 }
 function getUserAge() {
+    //Making sure the user puts a correct age
     while (userAgeIsInvalid) {
         userAge = prompt("Please enter your age.");
         if (userAge == null) return;
@@ -213,6 +214,7 @@ function getUserAge() {
             userAgeIsInvalid = false;
         }
     }
+    //Code to get old alert onto html page, links to measage area, += adding to the page, <br> making sure it doesnt end up on one line
     document.getElementById("messageArea").innerHTML +=
         "You are " + userAge + " years old, " + userName + ".<br><br>";
 }
