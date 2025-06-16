@@ -196,52 +196,33 @@ function start() {
  Functions
 ***********************************************************************/
 function getUserName() {
-    //Asking the user what their name is
-    userName = prompt("What's your name?")
-    //Program cancels
-    if (userName == null) {
-        return;
+      userName = prompt("What's your name?");
+      if (userName == null) return;
+      while (userName == "" || userName == " " || !isNaN(userName)) {
+        userName = prompt("Invalid! You must enter a valid name please.");
+        if (userName == null) return;
+      }
+      document.getElementById("messageArea").innerHTML += "Welcome " + userName + "!<br>";
     }
-    while (userName == "" || userName == " " || !isNaN(userName)) {
-        userName = prompt("Inavlid! You must enter a valid name please.");
-    }
-    alert("Welcome " + userName + "!");
-}
 function getUserAge() {
-    let userAgeIsInvalid = true;
-    //Asking the user how old they are
-    while (userAgeIsInvalid) {
+      while (userAgeIsInvalid) {
         userAge = prompt("Please enter your age.");
-        //Program cancels
-        if (userAge == null) {
-            return;
-        }
+        if (userAge == null) return;
         if (userAge == "" || userAge == " " || isNaN(userAge) || userAge < MINAGE || userAge > MAXAGE) {
-            alert("Inavlid! You must enter a valid age between " + MINAGE + " and " + MAXAGE);
-            userAge = prompt("Please enter your age.");
-            //Program cancels
-            if (userAge == null) {
-                return;
-            }
+          alert("Invalid! You must enter a valid age between " + MINAGE + " and " + MAXAGE);
         } else {
-            userAgeIsInvalid = false;
+          userAgeIsInvalid = false;
         }
+      }
+      document.getElementById("messageArea").innerHTML +=
+        "You are " + userAge + " years old, " + userName + ".<br><br>";
     }
-    alert("You are " + userAge + " years old " + userName + ".");
-}
 function getPocketMoney() {
-    //Asking the user how much pocket money they have
-    pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
-    //Program cancels
-    if (pocketMoney == null) {
-        return;
-    }
-    while (isNaN(pocketMoney) || pocketMoney < 1 || pocketMoney > 10) {
-        alert("Inavlid! Please enter an amount of pocket money between 1 and 10 dollars.");
+      pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
+      if (pocketMoney == null) return;
+      while (isNaN(pocketMoney) || pocketMoney < 1 || pocketMoney > 10) {
+        alert("Invalid! Please enter an amount of pocket money between 1 and 10 dollars.");
         pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
-        //Program cancels
-        if (pocketMoney == null) {
-            return;
-        }
+        if (pocketMoney == null) return;
+      }
     }
-}

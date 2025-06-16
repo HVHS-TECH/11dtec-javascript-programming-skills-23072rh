@@ -77,44 +77,11 @@
         "With the $" + pocketMoney + " you have, you can afford " + chocolate + " for $" + price + ".<br>";
     }
 
-    function getUserName() {
-      userName = prompt("What's your name?");
-      if (userName == null) return;
+  
 
-      while (userName == "" || userName == " " || !isNaN(userName)) {
-        userName = prompt("Invalid! You must enter a valid name please.");
-        if (userName == null) return;
-      }
+    
 
-      document.getElementById("messageArea").innerHTML += "Welcome " + userName + "!<br>";
-    }
-
-    function getUserAge() {
-      while (userAgeIsInvalid) {
-        userAge = prompt("Please enter your age.");
-        if (userAge == null) return;
-
-        if (userAge == "" || userAge == " " || isNaN(userAge) || userAge < MINAGE || userAge > MAXAGE) {
-          alert("Invalid! You must enter a valid age between " + MINAGE + " and " + MAXAGE);
-        } else {
-          userAgeIsInvalid = false;
-        }
-      }
-
-      document.getElementById("messageArea").innerHTML +=
-        "You are " + userAge + " years old, " + userName + ".<br><br>";
-    }
-
-    function getPocketMoney() {
-      pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
-      if (pocketMoney == null) return;
-
-      while (isNaN(pocketMoney) || pocketMoney < 1 || pocketMoney > 10) {
-        alert("Invalid! Please enter an amount of pocket money between 1 and 10 dollars.");
-        pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
-        if (pocketMoney == null) return;
-      }
-    }
+    
   </script>
 
 </body>
