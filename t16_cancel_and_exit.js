@@ -159,70 +159,58 @@ let price = 0;
 ***********************************************************************/
 function start() {
     getUserName();
-    //Program cancels
-    if (userName == null) {
-        return;
-    }
+    if (userName == null) return;
     getUserAge();
-    //Program cancels
-    if (userAge == null) {
-        return;
-    }
-    //Telling the user the needed information about the chocolate bars at the store
-    alert("In the store today we have 5 chocolate bars ranging from 1 - 10 dollars:\n"
-        + chocArray[1] + " for " + chocPriceArray[1] + " dollars.\n"
-        + chocArray[2] + " for " + chocPriceArray[2] + " dollars.\n"
-        + chocArray[3] + " for " + chocPriceArray[3] + " dollars.\n"
-        + chocArray[4] + " for " + chocPriceArray[4] + " dollars.\n"
-        + chocArray[5] + " for " + chocPriceArray[5] + " dollars.\n");
+    if (userAge == null) return;
+    document.getElementById("messageArea").innerHTML += "In the store today we have 5 chocolate bars ranging from 1 - 10 dollars:<br>"
+        + chocArray[1] + " for " + chocPriceArray[1] + " dollars.<br>"
+        + chocArray[2] + " for " + chocPriceArray[2] + " dollars.<br>"
+        + chocArray[3] + " for " + chocPriceArray[3] + " dollars.<br>"
+        + chocArray[4] + " for " + chocPriceArray[4] + " dollars.<br>"
+        + chocArray[5] + " for " + chocPriceArray[5] + " dollars.<br><br>";
     getPocketMoney();
-    //Program cancels
-    if (pocketMoney == null) {
-        return;
-    }
-    //Made pocketMoney into a number so that the computer doesnt get confused thinking prices are words
+    if (pocketMoney == null) return;
     pocketMoney = Number(pocketMoney);
-    //Using the loop to go through arrays to see what the user can afford
     for (let i = 1; i < chocPriceArray.length; i++) {
         if (pocketMoney >= chocPriceArray[i]) {
-            //Made chocolate and price have the values of the arrays
             chocolate = chocArray[i];
             price = chocPriceArray[i];
         }
     }
-    alert("With the " + pocketMoney + " dollars you have, you can afford " + chocolate + " for " + price + " dollars.");
+    document.getElementById("messageArea").innerHTML +=
+        "With the $" + pocketMoney + " you have, you can afford " + chocolate + " for $" + price + ".<br>";
 }
 /***********************************************************************
  Functions
 ***********************************************************************/
 function getUserName() {
-      userName = prompt("What's your name?");
-      if (userName == null) return;
-      while (userName == "" || userName == " " || !isNaN(userName)) {
+    userName = prompt("What's your name?");
+    if (userName == null) return;
+    while (userName == "" || userName == " " || !isNaN(userName)) {
         userName = prompt("Invalid! You must enter a valid name please.");
         if (userName == null) return;
-      }
-      document.getElementById("messageArea").innerHTML += "Welcome " + userName + "!<br>";
     }
+    document.getElementById("messageArea").innerHTML += "Welcome " + userName + "!<br>";
+}
 function getUserAge() {
-      while (userAgeIsInvalid) {
+    while (userAgeIsInvalid) {
         userAge = prompt("Please enter your age.");
         if (userAge == null) return;
         if (userAge == "" || userAge == " " || isNaN(userAge) || userAge < MINAGE || userAge > MAXAGE) {
-          alert("Invalid! You must enter a valid age between " + MINAGE + " and " + MAXAGE);
+            alert("Invalid! You must enter a valid age between " + MINAGE + " and " + MAXAGE);
         } else {
-          userAgeIsInvalid = false;
+            userAgeIsInvalid = false;
         }
-      }
-      document.getElementById("messageArea").innerHTML +=
-        "You are " + userAge + " years old, " + userName + ".<br><br>";
     }
+    document.getElementById("messageArea").innerHTML +=
+        "You are " + userAge + " years old, " + userName + ".<br><br>";
+}
 function getPocketMoney() {
-      pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
-      if (pocketMoney == null) return;
-      while (isNaN(pocketMoney) || pocketMoney < 1 || pocketMoney > 10) {
+    pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
+    if (pocketMoney == null) return;
+    while (isNaN(pocketMoney) || pocketMoney < 1 || pocketMoney > 10) {
         alert("Invalid! Please enter an amount of pocket money between 1 and 10 dollars.");
         pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
         if (pocketMoney == null) return;
-      }
     }
+}
