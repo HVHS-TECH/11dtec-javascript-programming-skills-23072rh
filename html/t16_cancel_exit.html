@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- stylesheets *******************************************-->
+  
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<!--*************************************************************
-  BODY
-**************************************************************-->
+
 <body>
   <h1>T16 - Cancel and exit</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
@@ -25,6 +24,95 @@
   </div>
 </body>
 </html>
-<!--*************************************************************
-  END OF T16_CANCEL_AND_EXIT.HTML
-**************************************************************-->
+-->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chocolate Store DOM Version</title>
+</head>
+<body>
+
+  <h1>🍫 Welcome to the Chocolate Store!</h1>
+  <p>Click below to start:</p>
+  <button onclick="start()">Start Program</button>
+
+  <div id="output"></div>
+
+  <script>
+    // Arrays for chocolate names and prices
+    const chocArray = ["nothing", "The Mars bar", "The Moro bar", "The King size crunchy", "The Dairy milk block", "The Lindt block"];
+    const chocPriceArray = [0, 2, 2.50, 3, 6, 7];
+
+    const MINAGE = 0;
+    const MAXAGE = 130;
+
+    function start() {
+      let output = document.getElementById("output");
+      output.innerHTML = ""; // Clear output each time you click Start
+
+      // Get user name
+      let userName = prompt("What's your name?");
+      if (userName === null) return;
+
+      while (userName.trim() === "" || !isNaN(userName)) {
+        userName = prompt("Invalid! Please enter a valid name.");
+        if (userName === null) return;
+      }
+      output.innerHTML += `<p>Welcome <strong>${userName}</strong>!</p>`;
+
+      // Get user age
+      let userAgeIsInvalid = true;
+      let userAge;
+      while (userAgeIsInvalid) {
+        userAge = prompt("Please enter your age.");
+        if (userAge === null) return;
+        if (userAge.trim() === "" || isNaN(userAge) || userAge < MINAGE || userAge > MAXAGE) {
+          alert("Invalid! Enter a number between 0 and 130.");
+        } else {
+          userAgeIsInvalid = false;
+        }
+      }
+      output.innerHTML += `<p>You are <strong>${userAge}</strong> years old.</p>`;
+
+      // Show chocolate options
+      output.innerHTML += "<p>In the store today we have:</p><ul>";
+      for (let i = 1; i < chocArray.length; i++) {
+        output.innerHTML += `<li>${chocArray[i]} for $${chocPriceArray[i]}</li>`;
+      }
+      output.innerHTML += "</ul>";
+
+      // Get pocket money
+      let pocketMoney = prompt(`How much pocket money do you have, ${userName}?`);
+      if (pocketMoney === null) return;
+
+      pocketMoney = Number(pocketMoney);
+      while (isNaN(pocketMoney) || pocketMoney < 1 || pocketMoney > 10) {
+        pocketMoney = prompt("Invalid! Enter an amount between 1 and 10 dollars.");
+        if (pocketMoney === null) return;
+        pocketMoney = Number(pocketMoney);
+      }
+
+      // Find what chocolate user can afford
+      let chocolate = "nothing";
+      let price = 0;
+      for (let i = 1; i < chocPriceArray.length; i++) {
+        if (pocketMoney >= chocPriceArray[i]) {
+          chocolate = chocArray[i];
+          price = chocPriceArray[i];
+        }
+      }
+
+      // Show result
+      output.innerHTML += `<p>With $${pocketMoney}, you can afford <strong>${chocolate}</strong> for $${price}.</p>`;
+    }
+  </script>
+</body>
+</html>

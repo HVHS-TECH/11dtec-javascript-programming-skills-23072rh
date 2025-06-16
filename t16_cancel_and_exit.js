@@ -134,6 +134,7 @@ console.log("get input from an HTML form");
 /*********************************************************************** 
  Varibles
 ***********************************************************************/
+/*
 //userName variable
 let userName;
 //userAge variables
@@ -157,7 +158,7 @@ let price = 0;
 /***********************************************************************
  Main code
 ***********************************************************************/
-
+/*
 function start() {
     getUserName();
     //Program cancels
@@ -196,7 +197,7 @@ function start() {
 /***********************************************************************
  Functions
 ***********************************************************************/
-
+/*
 function getUserName() {
     //Asking the user what their name is
     userName = prompt("What's your name?")
@@ -247,3 +248,4 @@ function getPocketMoney() {
         }
     }
 }
+*/
