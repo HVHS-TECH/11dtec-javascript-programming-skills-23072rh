@@ -31,7 +31,7 @@
 </head>
 <body>
 
- <h1>T16 - Cancel and exit</h1>
+ <h1>T17 update html</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
   <script src="../t16_cancel_and_exit.js"></script>
   <div class="w3-container">
@@ -43,24 +43,17 @@
 
   <script>
     // Variables
-    let userName;
-    let userAge;
-    const MINAGE = 0;
-    const MAXAGE = 130;
-    let userAgeIsInvalid = true;
-    let pocketMoney;
-    let chocArray = ["nothing", "The Mars bar", "The Moro bar", "The King size crunchy", "The Dairy milk block", "The Lindt block"];
-    let chocPriceArray = [0, 2, 2.50, 3, 6, 7];
-    let chocolate = "nothing";
-    let price = 0;
+    
+    
+    
+    
+
 
     function start() {
       getUserName();
       if (userName == null) return;
-
       getUserAge();
       if (userAge == null) return;
-
       document.getElementById("messageArea").innerHTML += "In the store today we have 5 chocolate bars ranging from 1 - 10 dollars:<br>"
         + chocArray[1] + " for " + chocPriceArray[1] + " dollars.<br>"
         + chocArray[2] + " for " + chocPriceArray[2] + " dollars.<br>"

@@ -134,13 +134,12 @@ console.log("get input from an HTML form");
 /*********************************************************************** 
  Varibles
 ***********************************************************************/
-/*
 //userName variable
 let userName;
 //userAge variables
 let userAge;
-const MINAGE = 0; //Changed this because it's hardcoded
-const MAXAGE = 130; //Changed this because it's hardcoded
+const MINAGE = 0;
+const MAXAGE = 130;
 let userAgeIsInvalid = true;
 //Pocket money variables
 let pocketMoney;
@@ -158,7 +157,6 @@ let price = 0;
 /***********************************************************************
  Main code
 ***********************************************************************/
-/*
 function start() {
     getUserName();
     //Program cancels
@@ -197,7 +195,6 @@ function start() {
 /***********************************************************************
  Functions
 ***********************************************************************/
-/*
 function getUserName() {
     //Asking the user what their name is
     userName = prompt("What's your name?")
@@ -248,4 +245,3 @@ function getPocketMoney() {
         }
     }
 }
-*/
