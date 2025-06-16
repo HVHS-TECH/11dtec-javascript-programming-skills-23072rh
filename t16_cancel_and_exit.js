@@ -159,9 +159,12 @@ let price = 0;
 ***********************************************************************/
 function start() {
     getUserName();
+    //Program cancels
     if (userName == null) return;
     getUserAge();
+    //Program cancels
     if (userAge == null) return;
+    //Code to get old alert onto html page, links to measage area, += adding to the page, <br> making sure it doesnt end up on one line
     document.getElementById("messageArea").innerHTML += "In the store today we have 5 chocolate bars ranging from 1 - 10 dollars:<br>"
         + chocArray[1] + " for " + chocPriceArray[1] + " dollars.<br>"
         + chocArray[2] + " for " + chocPriceArray[2] + " dollars.<br>"
@@ -169,14 +172,18 @@ function start() {
         + chocArray[4] + " for " + chocPriceArray[4] + " dollars.<br>"
         + chocArray[5] + " for " + chocPriceArray[5] + " dollars.<br><br>";
     getPocketMoney();
+    //Programs cancels
     if (pocketMoney == null) return;
+    //Making pocket money to a number so the computer dosnt think its a string (word)
     pocketMoney = Number(pocketMoney);
+    //Looking in arrays to see what the most expensive choclate bar the user can afford is
     for (let i = 1; i < chocPriceArray.length; i++) {
         if (pocketMoney >= chocPriceArray[i]) {
             chocolate = chocArray[i];
             price = chocPriceArray[i];
         }
     }
+    //Code to get old alert onto html page, links to measage area, += adding to the page, <br> making sure it doesnt end up on one line
     document.getElementById("messageArea").innerHTML +=
         "With the $" + pocketMoney + " you have, you can afford " + chocolate + " for $" + price + ".<br>";
 }
@@ -185,11 +192,15 @@ function start() {
 ***********************************************************************/
 function getUserName() {
     userName = prompt("What's your name?");
+    //Program cancels
     if (userName == null) return;
+    //Making sure the user is putting a correct name
     while (userName == "" || userName == " " || !isNaN(userName)) {
         userName = prompt("Invalid! You must enter a valid name please.");
+        //Program cancels
         if (userName == null) return;
     }
+    //Code to get old alert onto html page, links to measage area, += adding to the page, <br> making sure it doesnt end up on one line
     document.getElementById("messageArea").innerHTML += "Welcome " + userName + "!<br>";
 }
 function getUserAge() {

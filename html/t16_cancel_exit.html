@@ -26,12 +26,14 @@
 </html>
 -->
 <html>
+
 <head>
   <title>T17</title>
 </head>
+
 <body>
 
- <h1>T17 update html</h1>
+  <h1>T17 update html</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
   <script src="../t16_cancel_and_exit.js"></script>
   <div class="w3-container">
@@ -40,49 +42,6 @@
   </div>
   <!--Where measges will be placed-->
   <div id="messageArea"></div>
-
-  <script>
-    // Variables
-    
-    
-    
-    
-
-
-    function start() {
-      getUserName();
-      if (userName == null) return;
-      getUserAge();
-      if (userAge == null) return;
-      document.getElementById("messageArea").innerHTML += "In the store today we have 5 chocolate bars ranging from 1 - 10 dollars:<br>"
-        + chocArray[1] + " for " + chocPriceArray[1] + " dollars.<br>"
-        + chocArray[2] + " for " + chocPriceArray[2] + " dollars.<br>"
-        + chocArray[3] + " for " + chocPriceArray[3] + " dollars.<br>"
-        + chocArray[4] + " for " + chocPriceArray[4] + " dollars.<br>"
-        + chocArray[5] + " for " + chocPriceArray[5] + " dollars.<br><br>";
-
-      getPocketMoney();
-      if (pocketMoney == null) return;
-
-      pocketMoney = Number(pocketMoney);
-
-      for (let i = 1; i < chocPriceArray.length; i++) {
-        if (pocketMoney >= chocPriceArray[i]) {
-          chocolate = chocArray[i];
-          price = chocPriceArray[i];
-        }
-      }
-
-      document.getElementById("messageArea").innerHTML +=
-        "With the $" + pocketMoney + " you have, you can afford " + chocolate + " for $" + price + ".<br>";
-    }
-
-  
-
-    
-
-    
-  </script>
-
 </body>
+
 </html>
