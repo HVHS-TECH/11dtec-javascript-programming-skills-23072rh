@@ -36,73 +36,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chocolate Store DOM Version</title>
+  <title>Chocolate Shop</title>
 </head>
 <body>
 
-  <h1>🍫 Welcome to the Chocolate Store!</h1>
-  <p>Click below to start:</p>
-  <button onclick="start()">Start Program</button>
-
-  <div id="output"></div>
+  <h1>Welcome to the Chocolate Shop</h1>
+  <button onclick="start()">Start</button>
+  
+  <div id="messageArea"></div>
 
   <script>
-    // Arrays for chocolate names and prices
-    const chocArray = ["nothing", "The Mars bar", "The Moro bar", "The King size crunchy", "The Dairy milk block", "The Lindt block"];
-    const chocPriceArray = [0, 2, 2.50, 3, 6, 7];
-
+    // Variables
+    let userName;
+    let userAge;
     const MINAGE = 0;
     const MAXAGE = 130;
+    let userAgeIsInvalid = true;
+    let pocketMoney;
+    let chocArray = ["nothing", "The Mars bar", "The Moro bar", "The King size crunchy", "The Dairy milk block", "The Lindt block"];
+    let chocPriceArray = [0, 2, 2.50, 3, 6, 7];
+    let chocolate = "nothing";
+    let price = 0;
 
     function start() {
-      let output = document.getElementById("output");
-      output.innerHTML = ""; // Clear output each time you click Start
+      getUserName();
+      if (userName == null) return;
 
-      // Get user name
-      let userName = prompt("What's your name?");
-      if (userName === null) return;
+      getUserAge();
+      if (userAge == null) return;
 
-      while (userName.trim() === "" || !isNaN(userName)) {
-        userName = prompt("Invalid! Please enter a valid name.");
-        if (userName === null) return;
-      }
-      output.innerHTML += `<p>Welcome <strong>${userName}</strong>!</p>`;
+      document.getElementById("messageArea").innerHTML += "In the store today we have 5 chocolate bars ranging from 1 - 10 dollars:<br>"
+        + chocArray[1] + " for " + chocPriceArray[1] + " dollars.<br>"
+        + chocArray[2] + " for " + chocPriceArray[2] + " dollars.<br>"
+        + chocArray[3] + " for " + chocPriceArray[3] + " dollars.<br>"
+        + chocArray[4] + " for " + chocPriceArray[4] + " dollars.<br>"
+        + chocArray[5] + " for " + chocPriceArray[5] + " dollars.<br><br>";
 
-      // Get user age
-      let userAgeIsInvalid = true;
-      let userAge;
-      while (userAgeIsInvalid) {
-        userAge = prompt("Please enter your age.");
-        if (userAge === null) return;
-        if (userAge.trim() === "" || isNaN(userAge) || userAge < MINAGE || userAge > MAXAGE) {
-          alert("Invalid! Enter a number between 0 and 130.");
-        } else {
-          userAgeIsInvalid = false;
-        }
-      }
-      output.innerHTML += `<p>You are <strong>${userAge}</strong> years old.</p>`;
-
-      // Show chocolate options
-      output.innerHTML += "<p>In the store today we have:</p><ul>";
-      for (let i = 1; i < chocArray.length; i++) {
-        output.innerHTML += `<li>${chocArray[i]} for $${chocPriceArray[i]}</li>`;
-      }
-      output.innerHTML += "</ul>";
-
-      // Get pocket money
-      let pocketMoney = prompt(`How much pocket money do you have, ${userName}?`);
-      if (pocketMoney === null) return;
+      getPocketMoney();
+      if (pocketMoney == null) return;
 
       pocketMoney = Number(pocketMoney);
-      while (isNaN(pocketMoney) || pocketMoney < 1 || pocketMoney > 10) {
-        pocketMoney = prompt("Invalid! Enter an amount between 1 and 10 dollars.");
-        if (pocketMoney === null) return;
-        pocketMoney = Number(pocketMoney);
-      }
 
-      // Find what chocolate user can afford
-      let chocolate = "nothing";
-      let price = 0;
       for (let i = 1; i < chocPriceArray.length; i++) {
         if (pocketMoney >= chocPriceArray[i]) {
           chocolate = chocArray[i];
@@ -110,9 +84,49 @@
         }
       }
 
-      // Show result
-      output.innerHTML += `<p>With $${pocketMoney}, you can afford <strong>${chocolate}</strong> for $${price}.</p>`;
+      document.getElementById("messageArea").innerHTML +=
+        "With the $" + pocketMoney + " you have, you can afford " + chocolate + " for $" + price + ".<br>";
+    }
+
+    function getUserName() {
+      userName = prompt("What's your name?");
+      if (userName == null) return;
+
+      while (userName == "" || userName == " " || !isNaN(userName)) {
+        userName = prompt("Invalid! You must enter a valid name please.");
+        if (userName == null) return;
+      }
+
+      document.getElementById("messageArea").innerHTML += "Welcome " + userName + "!<br>";
+    }
+
+    function getUserAge() {
+      while (userAgeIsInvalid) {
+        userAge = prompt("Please enter your age.");
+        if (userAge == null) return;
+
+        if (userAge == "" || userAge == " " || isNaN(userAge) || userAge < MINAGE || userAge > MAXAGE) {
+          alert("Invalid! You must enter a valid age between " + MINAGE + " and " + MAXAGE);
+        } else {
+          userAgeIsInvalid = false;
+        }
+      }
+
+      document.getElementById("messageArea").innerHTML +=
+        "You are " + userAge + " years old, " + userName + ".<br><br>";
+    }
+
+    function getPocketMoney() {
+      pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
+      if (pocketMoney == null) return;
+
+      while (isNaN(pocketMoney) || pocketMoney < 1 || pocketMoney > 10) {
+        alert("Invalid! Please enter an amount of pocket money between 1 and 10 dollars.");
+        pocketMoney = prompt("How much pocket money do you have, " + userName + "?");
+        if (pocketMoney == null) return;
+      }
     }
   </script>
+
 </body>
 </html>
